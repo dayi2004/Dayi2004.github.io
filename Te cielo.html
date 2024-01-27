@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página Interactiva</title>
+    <script type="text/javascript">
+        function miFuncion() {
+            var nombre = prompt("¿Cuál es tu nombre?");
+            while (true) {
+                var respuesta = confirm(nombre + ", ¿QUIERES SER EL AMOR DE MI VIDA?");
+                if (respuesta == true) {
+                    alert("El amor que siento por ti, " + nombre + ", es lo más bonito del mundo. Eres mi primer y único amor. No existe nadie como tú. Eres el AMOR DE MI ETERNIDAD.");
+                    break;
+                } else {
+                    var respuesta2 = confirm("¿Estás seguro, " + nombre + "?");
+                    if (respuesta2 == false) {
+                        alert("¡Eso pensé! Vamos a intentarlo de nuevo.");
+                    } else {
+                        alert("Está bien, " + nombre + ". Respeto tu decisión. ¡Hasta la próxima!");
+                        break;
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="miFuncion()">
+</body>
+</html>
